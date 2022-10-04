@@ -38,5 +38,9 @@ public abstract class Animal {
     public int getLegs() {
         return legs;
     }
+
+    boolean getFeathers() {
+        return feathers;
+    }
 }
 
