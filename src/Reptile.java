@@ -4,7 +4,13 @@ public class Reptile extends Vertebrate{
     }
 
     @Override
-    void speak() {
-        System.out.println("Hisssss");
+    public String speak() {
+        if(getLegs() == 4){
+            return "Four legs good." + " Scaly legs.";
+        }
+        else if(getLegs() == 2){
+            return "Two legs baa-d." + " Scaly legs.";
+        }
+        return "";
     }
 }

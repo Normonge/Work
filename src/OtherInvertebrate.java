@@ -4,8 +4,14 @@ public class OtherInvertebrate extends Invertebrate{
     }
 
     @Override
-    void speak(){
-        System.out.println("I have no backbone");
+    public String speak(){
+        String quote = "Legs??? I have no need!";
+
+        if(getLegs() > 0){
+            quote = quote + " Oh wait have, " + getLegs() + "!";
+        }
+
+        return  quote;
     }
 
 }

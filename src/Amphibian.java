@@ -4,7 +4,17 @@ public class Amphibian extends Vertebrate{
     }
 
     @Override
-    void speak() {
-        System.out.println("Croak");
+    public String speak() {
+        String quote = "";
+        if(getLegs() == 4){
+            quote =  "Four legs good.";
+        }
+        else if(getLegs() == 2){
+            quote = "Two legs baa-d.";
+        }
+        if(isTail()){
+            quote = quote + " Has a tail.";
+        }
+        return quote;
     }
 }

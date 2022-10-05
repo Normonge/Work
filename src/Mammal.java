@@ -3,8 +3,5 @@ public class Mammal extends Vertebrate{
         super(hair, feathers, eggs, milk, airborne, aquatic, venomous, fins, tail, animal_name, legs, class_type);
     }
 
-    @Override
-    void speak() {
-        System.out.println("Im a Mammal");
-    }
+
 }

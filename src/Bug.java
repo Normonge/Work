@@ -4,11 +4,8 @@ public class Bug extends Invertebrate{
         super(hair, feathers, eggs, milk, airborne, aquatic, venomous, fins, tail, animal_name, legs, class_type);
     }
 
-    /*
-        The bug class defines Speak by associating the String skuttle to the bug class
-         */
     @Override
-    void speak() {
-        System.out.println("Skuttle");
+    public String speak() {
+        return "I have " + getLegs() + " legs. " + getLegs() + " legs best!";
     }
 }

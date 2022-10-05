@@ -3,7 +3,18 @@ public class Vertebrate extends Animal {
         super(hair, feathers, eggs, milk, airborne, aquatic, venomous, fins, tail, animal_name, legs, class_type);
     }
 
-    void speak() {
 
+    @Override
+    public String speak() {
+        if(getLegs() == 4){
+            return "Four legs good.";
+        }
+        else if(getLegs() == 2){
+            return "Two legs baa-d.";
+        }
+        return "";
     }
+
+
+
 }

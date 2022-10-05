@@ -8,7 +8,10 @@ public class Bird extends Vertebrate{
         The bird class defines Speak by associating the String Chirp to the Bird class
          */
     @Override
-    void speak() {
-        System.out.println("chirp");
+    public String speak() {
+        if (getLegs() == 2){
+            return "Two legs baa-d." + " But have wings.";
+        }
+        return "";
     }
 }
